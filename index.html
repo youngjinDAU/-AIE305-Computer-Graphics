@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        canvas{border:1px solid; width: 500px; height: 500px}
+        canvas{border:1px solid; height: 750px}
         body{margin:0;}
     </style>
     <script src="js/three.js"></script>
@@ -15,20 +15,22 @@
 </head>
 <body>
     <h1>[AIE305] Computer Graphics Lab</h1>
-    <h2>Inside / Outside</h2>
-    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <h2>Mouse Interactions</h2>
+    <canvas id="myCanvas" width=750 height=750></canvas>
     <br>
     <div id="hw">
       <h3>학번 : </h3>
       <h3>이름 : </h3>
       <h3>기본과제 </h3>
-      <input type="checkbox" id="hw1" name="hw1" /><label for="hw1">main_231004.js 코드 확인</label><br>
-      <input type="checkbox" id="hw2" name="hw2" /><label for="hw2">보라색 상자 내부의 점들을 {색 : 보라, 크기 : 2}로 렌더링    </label><br>
-      <input type="checkbox" id="hw3" name="hw3" /><label for="hw3">키보드 입력(W,A,S,D)으로 보라색 사각형을 이동 가능하게 구현    </label><br>
+      <input type="checkbox" id="hw1" name="hw1" /><label for="hw1">main_231011.js 코드 확인</label><br>
+      <input type="checkbox" id="hw2" name="hw2" /><label for="hw2">마우스를 따라가는 원과 그 내부 점들에 대한 구현 확인</label><br>
+      <input type="checkbox" id="hw3" name="hw3" /><label for="hw3">원 내부의 점에 대해 x값이 양수인 점은 점 크기를 3으로 조절</label><br>
       <h3>도전과제 </h3>
-      <input type="checkbox" id="hw4" name="hw4" /><label for="hw4">원과 상자에 동시에 겹치는 점들은 {색 : 초록, 크기 : 3}로 렌더링
+      <input type="checkbox" id="hw4" name="hw4" />Wheel 조작으로 원 반지름이 음수가 되었을 때 오류가 발생하는 것을 해결<label for="hw4"><br>
+        <input type="checkbox" id="hw5" name="hw5" />드래그도 동작하게 응용<label for="hw5">
+
     </label><br>
     </div>
 </body>
 </html>
-<script src="js/main_231004.js"></script>
+<script src="js/main_231011.js"></script>
