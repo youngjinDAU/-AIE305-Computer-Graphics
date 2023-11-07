@@ -2,35 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        canvas{border:1px solid; height: 750px}
-        body{margin:0;}
-    </style>
-    <script src="js/three.js"></script>
-
+    <title>Three.js with ES Modules</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 <body>
-    <h1>[AIE305] Computer Graphics Lab</h1>
-    <h2>Mouse Interactions</h2>
-    <canvas id="myCanvas" width=750 height=750></canvas>
+    <div style="width:750px;height:750px;float:left;" id="canv"></div>
+    <div style="float:left; padding:10px;">
+        <h1>[AIE305] Computer Graphics Lab</h1>
+    <h2>3D Primitives</h2>
     <br>
     <div id="hw">
       <h3>학번 : </h3>
       <h3>이름 : </h3>
       <h3>기본과제 </h3>
-      <input type="checkbox" id="hw1" name="hw1" /><label for="hw1">main_231018.js 코드 확인</label><br>
-      <input type="checkbox" id="hw2" name="hw2" /><label for="hw2">마우스를 따라가는 원과 그 내부 점들에 대한 구현 확인</label><br>
-      <input type="checkbox" id="hw3" name="hw3" /><label for="hw3">원 내부의 점에 대해 x값이 20의 배수인 점은 점 크기를 3으로 조절</label><br>
+      <input type="checkbox" id="hw1" name="hw1" /><label for="hw1">main_231117.js 코드 확인</label><br>
+      <input type="checkbox" id="hw2" name="hw2" /><label for="hw2">모두 보라색으로 변경 후 결과 확인</label><br>
+      <input type="checkbox" id="hw3" name="hw3" /><label for="hw3">각기 다른 임의의 색으로 변경 후 결과 확인</label><br>
       <h3>도전과제 </h3>
-      <input type="checkbox" id="hw4" name="hw4" />Wheel 조작으로 원 반지름이 음수가 되었을 때 오류가 발생하는 것을 해결<label for="hw4"><br>
-        <input type="checkbox" id="hw5" name="hw5" />드래그도 동작하게 응용<label for="hw5">
-
+      <input type="checkbox" id="hw4" name="hw4" /><label for="hw4"></label>25개로 개수 늘린 뒤 모두 한 화면에 보이도록 카메라 조정<br>(최대한 안 겹치도록, 배치에 신경 쓰면 좋습니다)
     </label><br>
     </div>
+    </div>
+    <script src="js/main_231108.js" type="module"></script>
 </body>
 </html>
-<script src="js/main_231018.js"></script>
