@@ -17,14 +17,21 @@
       <h3>학번 : </h3>
       <h3>이름 : </h3>
       <h3>기본과제 </h3>
-      <input type="checkbox" id="hw1" name="hw1" /><label for="hw1">main_231108.js 코드 확인</label><br>
-      <input type="checkbox" id="hw2" name="hw2" /><label for="hw2">모두 보라색으로 변경 후 결과 확인</label><br>
-      <input type="checkbox" id="hw3" name="hw3" /><label for="hw3">각기 다른 임의의 색으로 변경 후 결과 확인</label><br>
-      <h3>도전과제 </h3>
-      <input type="checkbox" id="hw4" name="hw4" /><label for="hw4"></label>25개로 개수 늘린 뒤 모두 한 화면에 보이도록 카메라 조정<br>(최대한 안 겹치도록, 배치에 신경 쓰면 좋습니다)
+      <input type="checkbox" id="hw1" name="hw1" /><label for="hw1">animate() 내부 Camera 이동 함수 주석 해제 후 결과 확인
+    </label><br>
+      <input type="checkbox" id="hw2" name="hw2" /><label for="hw2">Camera를 반대 방향으로 회전해보기
+    </label><br>
+      <input type="checkbox" id="hw3" name="hw3" /><label for="hw3">점 조명(Point Light)에 대한 조작해보기
+    </label><br>
+      <input type="checkbox" id="hw4" name="hw4" /><label for="hw4"></label>models/bunny_stanford.obj 로드 후 렌더링
     </label><br>
     </div>
     </div>
-    <script src="js/main_231108.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/three@0.132.0/examples/js/loaders/OBJLoader.js" type="module"></script>
+    <script src="https://unpkg.com/three@0.132.0/examples/js/controls/OrbitControls.js" type="module"></script>
+
+    <script src="js/main_231115.js" type="module"></script>
+
 </body>
 </html>
