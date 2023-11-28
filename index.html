@@ -11,28 +11,34 @@
     <div style="width:750px;height:750px;float:left;" id="canv"></div>
     <div style="float:left; padding:10px;">
         <h1>[AIE305] Computer Graphics Lab</h1>
-    <h2>GUI</h2>
+    <h2>3D Physics</h2>
     <br>
     <div id="hw">
       <h3>학번 : </h3>
       <h3>이름 : </h3>
       <h3>기본과제 </h3>
-      <input type="checkbox" id="hw1" name="hw1" /><label for="hw1">기존 코드의 모든 조명 삭제    </label><br>
-      <input type="checkbox" id="hw2" name="hw2" /><label for="hw2">세 개의 포인트라이트를 추가로 생성   </label><br>
-      <input type="checkbox" id="hw3" name="hw3" /><label for="hw3">포인트라이트의 색은 R,G,B로 설정하고 서로 다른 임의 위치에 배치  </label><br>
-      <input type="checkbox" id="hw4" name="hw4" /><label for="hw4"></label>조명 조절 GUI 구현 후 결과 확인
-      <div style="font-size:14px"><br>1. 켜고 끌 수 있게(checkbox toggle) GUI 추가
-        <br>2. 조명 별 콤보박스를 생성하여 이동할 수 있게 GUI 추가
-        <br>3. 파란색 조명은 추가로 distance/decay를 조절할 수 있게 GUI 추가</div>
-      
-    </label><br>
+      <input type="checkbox" id="hw1" name="hw1" /><label for="hw1">main_221129.js 코드 분석</label><br>
+      <input type="checkbox" id="hw2" name="hw2" /><label for="hw2">달의 중력(y=-1.62)으로 설정 후 변화 관찰</label><br>
+      <input type="checkbox" id="hw3" name="hw3" /><label for="hw3">10개의 sphere 모델을 임의 위치에 생성하게 한 후 물리엔진 결과 확인</label>
     </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/three@0.132.0/examples/js/loaders/OBJLoader.js" type="module"></script>
-    <script src="https://unpkg.com/three@0.132.0/examples/js/controls/OrbitControls.js" type="module"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.3/dat.gui.min.js"></script>
-    <script src="js/main_231122.js" type="module"></script>
+
+<script async src="https://unpkg.com/es-module-shims@1.6.0/dist/es-module-shims.js"></script>
+
+<script type="importmap">
+  {
+		"imports": {
+			"three": "https://cdn.skypack.dev/three@0.146.0/build/three.module",
+      "three/": "https://cdn.skypack.dev/three@0.146.0/",      
+      "dat.gui": "https://cdn.skypack.dev/dat.gui",
+      "cannon-es": "https://cdn.skypack.dev/cannon-es",
+      "CannonUtils": "https://cdn.jsdelivr.net/gh/Sean-Bradley/CannonUtils@main/cannonUtils.js",
+      "CannonDebugRenderer": "https://cdn.jsdelivr.net/gh/Sean-Bradley/CannonUtils@main/cannonDebugRenderer.js"
+		}
+	}
+</script>
+
+    <script src="js/main_231129.js" type="module"></script>
 
 </body>
 </html>
